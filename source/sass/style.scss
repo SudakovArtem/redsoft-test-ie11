@@ -1,0 +1,27 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+@import "global/typography";
+
+// Blocks
+//---------------------------------
+
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/footer";
+@import "blocks/btn";
+@import "blocks/loader";
+@import "blocks/gallery";
+@import "blocks/gallery-item";
+@import "blocks/search-form";
+@import "blocks/input-wrapper";

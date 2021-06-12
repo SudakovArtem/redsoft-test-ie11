@@ -1,0 +1,32 @@
+.gallery {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.gallery__title {
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.gallery__list {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 32px);
+  margin-right: -32px;
+  margin-bottom: -32px;
+}
+
+.gallery__item {
+  width: calc(25% - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1279px) {
+    width: calc(33.33% - 32px);
+  }
+}

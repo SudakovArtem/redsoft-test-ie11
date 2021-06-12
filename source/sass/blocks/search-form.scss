@@ -1,0 +1,15 @@
+.search-form {
+  margin-left: auto;
+  flex-grow: 1;
+  max-width: 416px;
+  margin-bottom: 7px;
+
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+  button[type="submit"] {
+    min-width: 122px;
+  }
+}

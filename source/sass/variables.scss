@@ -1,0 +1,43 @@
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com/hex/334482
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+
+$color-gondola:                   #382e2b;
+$color-night-rider:               #343030;
+$color-rebel:                     #403432;
+$color-cioccolato:                #5b3a32;
+$color-russett:                   #776763;
+$color-matterhorn:                #555555;
+$color-nobel:                     #a0a0a0;
+$color-nobel2:                    #9f9f9f;
+$color-pink-swan:                 #b5b5b5;
+$color-pink-swan2:                #c1b4b1;
+$color-gainsboro:                 #e1e1e1;
+$color-whisper:                   #eceaea;
+$color-white-smoke:               #f6f3f3;
+$color-alice-blue:                #f4f6f9;
+
+// Typography
+//---------------------------------
+
+$font-family--primary:                     "Merriweather", "Arial", sans-serif;
+
+// Animation
+//---------------------------------
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

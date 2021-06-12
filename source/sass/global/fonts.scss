@@ -1,0 +1,23 @@
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Merriweather";
+
+  font-display: swap;
+  src:
+    url("../fonts/merriweather-regular.woff2") format("woff2"),
+    url("../fonts/merriweather-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Merriweather";
+
+  font-display: swap;
+  src:
+    url("../fonts/merriweather-bold.woff2") format("woff2"),
+    url("../fonts/merriweather-bold.woff") format("woff");
+}
+
+

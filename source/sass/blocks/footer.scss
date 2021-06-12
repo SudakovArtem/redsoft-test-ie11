@@ -1,0 +1,51 @@
+.footer {
+  width: 100%;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  background-color: $color-whisper;
+}
+
+.footer__logo {
+  color: $color-rebel;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.footer__contacts-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-matterhorn;
+  transition: opacity $default-transition-settings;
+
+  @media (hover: hover), screen and (min-width: 0) {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 48px;
+  }
+
+  svg {
+    margin-right: 8px;
+  }
+}

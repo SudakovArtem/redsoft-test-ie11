@@ -1,0 +1,35 @@
+.main-nav {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.main-nav__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 10px;
+}
+
+.main-nav__item {
+  flex-shrink: 0;
+
+  &:not(:last-of-type) {
+    margin-right: 49px;
+  }
+}
+
+.main-nav__link {
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-night-rider;
+  transition: opacity $default-transition-settings;
+
+  @media (hover: hover), screen and (min-width: 0) {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}
