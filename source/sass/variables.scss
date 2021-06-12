@@ -1,6 +1,5 @@
 // Colors
 //---------------------------------
-// https://www.htmlcsscolor.com/hex/334482
 
 // Default
 
@@ -28,16 +27,9 @@ $color-alice-blue:                #f4f6f9;
 // Typography
 //---------------------------------
 
-$font-family--primary:                     "Merriweather", "Arial", sans-serif;
+$font-family--primary:            "Merriweather", "Arial", sans-serif;
 
 // Animation
 //---------------------------------
 
-$default-transition-settings:       0.3s ease;
-$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
-
-// Retina
-//---------------------------------
-
-$retina-dpi:                        144dpi;
-$retina-dppx:                       1.5dppx;
+$default-transition-settings:      0.3s ease;

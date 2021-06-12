@@ -1,8 +1,10 @@
 import axios from "axios";
 import Vue from "../vendor/vue"
 
-const initGallery2 = () => {
-  var app = new Vue({
+const initGallery = () => {
+  const postUrl = 'https://jsonplaceholder.typicode.com/posts/1';
+
+  const app = new Vue({
     el: '#gallery',
     data() {
       return {
@@ -67,12 +69,12 @@ const initGallery2 = () => {
     },
     methods: {
       addToCart(id) {
-          const item = this.galleryItems.find(item => item.id === id)
+        const item = this.galleryItems.find(item => item.id === id)
         if (!item.inCart) {
           item.loading = true
-        document.activeElement.blur()
-        try {
-            axios.get('https://jsonplaceholder.typicode.com/posts/1').then(value => {
+          document.activeElement.blur()
+          try {
+            axios.get(postUrl).then(value => {
               item.inCart = true
               item.loading = false
               localStorage.setItem('gallery-items', JSON.stringify(this.galleryItems))
@@ -83,9 +85,9 @@ const initGallery2 = () => {
             console.error(e.message)
           }
         }
-        },
-      }
-  })
+      },
+    }
+  });
 }
 
-export {initGallery2}
+export {initGallery}

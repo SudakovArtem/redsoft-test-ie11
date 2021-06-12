@@ -228,10 +228,10 @@
         <h1 class="visually-hidden">Галерея</h1>
         <h2 class="h2 gallery__title">Картины эпохи Возрождения</h2>
         <ul class="gallery__list" v-cloak>
-          <li v-for="item in pictures" class="gallery__item gallery-item">
+          <li v-for="item in pictures" class="gallery__item gallery-item" :key="item.id">
             <a :href="item.href" :class="['gallery-item', item.sold ? 'gallery-item--sold' : null]">
               <div class="gallery-item__img">
-                <img :src="'img/' + item.imgSrc + '.jpg'" :srcset="'img/' + item.imgSrc + '@2x.jpg'" :alt="item.title">
+                <img :src="'img/' + item.imgSrc + '.jpg'" :srcset="'img/' + item.imgSrc + '@2x.jpg 2x'" :alt="item.title">
               </div>
               <div class="gallery-item__content">
                 <h3 class="gallery-item__title">{{item.title}}</h3>
