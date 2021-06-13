@@ -78,7 +78,6 @@ const initGallery = () => {
               item.inCart = true
               item.loading = false
               localStorage.setItem('gallery-items', JSON.stringify(this.galleryItems))
-              console.log(value)
             })
           } catch (e) {
             item.loading = false
