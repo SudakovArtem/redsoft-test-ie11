@@ -39,7 +39,7 @@
                 <p v-else class="gallery-item__price">
                   <span>Продана на аукционе</span>
                 </p>
-                <button v-if="!item.sold" :class="['btn', item.loading ? 'loading' : null, item.inCart ? 'btn--in-cart' : null]" @click.prevent="addToCart(item.id)">
+                <button v-if="!item.sold" :class="['btn', item.loading ? 'loading' : null, item.inCart ? 'btn--in-cart' : null]" @click.prevent.stop="addToCart(item.id)">
                   <span v-if="item.loading" class="loader"></span>
                   <span v-else>
                     <svg v-if="item.inCart" fill="none" width="20" height="20" focusable="false">
